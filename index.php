@@ -37,7 +37,13 @@
             This makes me feel the opposite of tingley.
         </p>
 
-        <?php echo "Hi Andre"; ?>
+        <?php
+            $users = array('Ross', 'Andre');
+
+            foreach ($users as $user) {
+                echo "<h3>Hello $user</h3>";
+            }
+        ?>
     </body>
 </html>
 
