@@ -43,7 +43,51 @@
                 echo "<h3>Poopy pants makes $user Dance</h3>";
             }
         ?>
-    </body>
-</html>
+	<p class="text-right"style="font-family:comics;color:red;font-size:90px;"> THIS IS GOOD PHO / BEEF STEW.
+		<address class="text-right">
+		<strong>Vhin Long.</strong><br>
+		1061 Murfreesboro Pike<br>
+		Nashville, TN 37215<br>
+		</address>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+    
+	<h4>Secrets of the Divine (no cheating)</h4>
+	<table border="69">
+	  <tr class="sucess">
+	   <td>pizza</td>
+	   <td>tacos</td>
+	   <td>bacon band-aids</td>
+	  </tr>
+	  <tr class="warning">
+	   <td>big</td>
+	   <td>stupid</td>
+	   <td>jerk</td>
+	  </tr>
+	 </table>
+
+<form class="form-inline">
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledInput">Disabled input</label>
+      <input type="text" id="disabledInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledInput">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+	</body>
+   </html>
 
 
