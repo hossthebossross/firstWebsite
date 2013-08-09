@@ -13,7 +13,7 @@
             <div class="col-lg-6 col-lg-offset-3">Colum lrg6 offset 3</div>
         </div>
 
-        <div style="opacity:0.3;position:absolute;left:10px;width:100%;height:100%;background-color:#8AC007"></div>
+        <div style="opacity:0.3;position:absolute;left:;width:100%;height:100%;background-color:#8AC007"></div>
 
         <h1 style="font-family:verdana;color:green;font-size:60px;">Rules are for those without reason.</h1>
 
@@ -53,13 +53,13 @@
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
     
 	<h4>Secrets of the Divine (no cheating)</h4>
-	<table border="69">
-	  <tr class="sucess">
+	<table class="table"border="69">
+	  <tr class="success">
 	   <td>pizza</td>
 	   <td>tacos</td>
 	   <td>bacon band-aids</td>
 	  </tr>
-	  <tr class="warning">
+	  <tr class="danger">
 	   <td>big</td>
 	   <td>stupid</td>
 	   <td>jerk</td>
