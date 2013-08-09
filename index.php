@@ -1,24 +1,23 @@
-<html>
+
     <body>
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
         <div class="row">
-            <div class="col-lg-4">...</div>
-            <div class="col-lg-4 col-lg-offset-4">...</div>
+            <div class="col-lg-4">COLUM LARGE 4</div>
+            <div class="col-lg-4 col-lg-offset-4">COLUM OFFSET 4</div>
         </div>
         <div class="row">
             <div class="col-lg-3 col-lg-offset-3">3 offset 3</div>
             <div class="col-lg-3 col-lg-offset-3">3 offset 3</div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-lg-offset-3">...</div>
+            <div class="col-lg-6 col-lg-offset-3">Colum lrg6 offset 3</div>
         </div>
 
-        <div style="opacity:0.3;position:absolute;left:10px;width:1000px;height:1000px;background-color:#8AC007"></div>
+        <div style="opacity:0.3;position:absolute;left:10px;width:100%;height:100%;background-color:#8AC007"></div>
 
         <h1 style="font-family:verdana;color:green;font-size:60px;">Rules are for those without reason.</h1>
 
-        <p style="font-family:arial;color:red;font-size:40px;">
+        <p class="text-center"style="font-family:arial;color:red;font-size:40px;">
             Rules are constructed given different circumstances other than the current.
             <br> Reason is used to deal in real time.
         </p>
@@ -38,10 +37,10 @@
         </p>
 
         <?php
-            $users = array('Ross', 'Andre');
+            $users = array('Ross', 'Andre', 'Everybody');
 
             foreach ($users as $user) {
-                echo "<h3>Hello $user</h3>";
+                echo "<h3>Poopy pants makes $user Dance</h3>";
             }
         ?>
     </body>
