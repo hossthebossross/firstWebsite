@@ -86,21 +86,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <?php foreach ($eat as $eat): ?>
-                        <td><?php echo $eat; ?></td>
-                    <?php endforeach; ?>
-                </tr>
-                <tr>
-                    <?php foreach ($yell as $yell): ?>
-                        <td><?php echo $yell; ?></td>
-                    <?php endforeach; ?>
-                </tr>
-                <tr>
-                    <?php foreach ($poop as $poop): ?>
-                        <td><?php echo $poop; ?></td>
-                    <?php endforeach; ?>
-                </tr>
+                <?php for ($i = 0; $i < 3; $i++): ?>
+                    <tr>
+                        <td><?php echo $eat[$i]; ?></td>
+                    </tr>
+                    <tr>
+                        <td><?php echo $yell[$i]; ?></td>
+                    </tr>
+                    <tr>
+                        <td><?php echo $poop[$i]; ?></td>
+                    </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
 
