@@ -89,11 +89,7 @@
                 <?php for ($i = 0; $i < 3; $i++): ?>
                     <tr>
                         <td><?php echo $eat[$i]; ?></td>
-                    </tr>
-                    <tr>
                         <td><?php echo $yell[$i]; ?></td>
-                    </tr>
-                    <tr>
                         <td><?php echo $poop[$i]; ?></td>
                     </tr>
                 <?php endfor; ?>
