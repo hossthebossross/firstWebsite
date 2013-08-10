@@ -1,6 +1,9 @@
-
+<html>
+	<head>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+	</head>
     <body>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+	<script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
         <div class="row">
             <div class="col-lg-4">COLUM LARGE 4</div>
             <div class="col-lg-4 col-lg-offset-4">COLUM OFFSET 4</div>
@@ -24,7 +27,9 @@
 
         <p style="font-family:comics sans;color:teal;font-size:50px;"> Yella smelly fella.
             <img src="http://www.littleamerica-twh.net/images/Buster's%20Yellow%20Fellow.jpg" width="300" height="350">
-        </p>
+        
+
+</p>
 
         <div style="color:#40B3DF;">
             Colors
@@ -66,6 +71,24 @@
 	  </tr>
 	 </table>
 
+	<?php
+		$eat = array('pizza', 'beans', 'big bites');
+		$yell = array('dog', 'mom', 'small children');
+		$poop = array('steps', 'car hood', 'enemys shoes');
+		
+		foreach ($eat as $eat) {
+			echo "<table>
+				<tr>
+				<td>$eat.</td>
+				</tr>
+				<tr>
+				<td>$yell.</td>
+				</tr>
+				<tr>
+				<td>$poop.</td>
+				</tr>";
+			}
+		?>
 <form class="form-inline">
   <fieldset disabled>
     <div class="form-group">
@@ -86,7 +109,9 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>
-
+<script>
+	
+</script>
 	</body>
    </html>
 
