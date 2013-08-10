@@ -96,7 +96,7 @@
                     <tr>
                         <td><?php echo $poop[$i]; ?></td>
                     </tr>
-                <?php endforeach; ?>
+                <?php endfor; ?>
             </tbody>
         </table>
 
