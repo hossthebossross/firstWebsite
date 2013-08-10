@@ -76,8 +76,15 @@
 		$yell = array('dog', 'mom', 'small children');
 		$poop = array('steps', 'car hood', 'enemys shoes');
 		
-		foreach ($eat as $eat) {
+		foreach ($eat as $eat)
+		foreach ($yell as $yell)
+		foreach	($poop as $poop) {
 			echo "<table>
+				<tr>
+				<th>Things to eat.</th>
+				<th>Things to yell at.</th>
+				<th>Things to poop on.</th>
+				</tr>
 				<tr>
 				<td>$eat.</td>
 				</tr>
@@ -86,9 +93,11 @@
 				</tr>
 				<tr>
 				<td>$poop.</td>
-				</tr>";
-			}
-		?>
+				</tr>
+				</table>";
+				}
+				?>
+		
 <form class="form-inline">
   <fieldset disabled>
     <div class="form-group">
