@@ -71,57 +71,60 @@
 	  </tr>
 	 </table>
 
-	<?php
-		$eat = array('pizza', 'beans', 'big bites');
-		$yell = array('dog', 'mom', 'small children');
-		$poop = array('steps', 'car hood', 'enemys shoes');
-		
-		foreach ($eat as $eat)
-		foreach ($yell as $yell)
-		foreach	($poop as $poop) {
-			echo "<table>
-				<tr>
-				<th>Things to eat.</th>
-				<th>Things to yell at.</th>
-				<th>Things to poop on.</th>
-				</tr>
-				<tr>
-				<td>$eat.</td>
-				</tr>
-				<tr>
-				<td>$yell.</td>
-				</tr>
-				<tr>
-				<td>$poop.</td>
-				</tr>
-				</table>";
-				}
-				?>
-		
-<form class="form-inline">
-  <fieldset disabled>
-    <div class="form-group">
-      <label for="disabledInput">Disabled input</label>
-      <input type="text" id="disabledInput" class="form-control" placeholder="Disabled input">
-    </div>
-    <div class="form-group">
-      <label for="disabledInput">Disabled select menu</label>
-      <select id="disabledSelect" class="form-control">
-        <option>Disabled select</option>
-      </select>
-    </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox"> Can't check this
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </fieldset>
-</form>
-<script>
-	
-</script>
+        <?php
+            $eat = array('pizza', 'beans', 'big bites');
+            $yell = array('dog', 'mom', 'small children');
+            $poop = array('steps', 'car hood', 'enemys shoes');
+        ?>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Things to eat.</th>
+                    <th>Things to yell at.</th>
+                    <th>Things to poop on.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <?php foreach ($eat as $eat): ?>
+                        <td><?php echo $eat; ?></td>
+                    <?php endforeach; ?>
+                </tr>
+                <tr>
+                    <?php foreach ($yell as $yell): ?>
+                        <td><?php echo $yell; ?></td>
+                    <?php endforeach; ?>
+                </tr>
+                <tr>
+                    <?php foreach ($poop as $poop): ?>
+                        <td><?php echo $poop; ?></td>
+                    <?php endforeach; ?>
+                </tr>
+            </tbody>
+        </table>
+
+        <form class="form-inline">
+            <fieldset disabled>
+                <div class="form-group">
+                    <label for="disabledInput">Disabled input</label>
+                    <input type="text" id="disabledInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="form-group">
+                    <label for="disabledInput">Disabled select menu</label>
+                    <select id="disabledSelect" class="form-control">
+                        <option>Disabled select</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Can't check this</input>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
 	</body>
-   </html>
+</html>
 
 
