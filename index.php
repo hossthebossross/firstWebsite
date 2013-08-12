@@ -1,3 +1,16 @@
+<?php
+
+    //start the session
+    session_start();
+
+    if (!$_SESSION['ross_token']) {
+        // no token is set so redirect to login page
+        header('Location: login.php');
+        die();
+    }
+
+?>
+
 <html>
 	<head>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
@@ -27,7 +40,7 @@
 
         <p style="font-family:comics sans;color:teal;font-size:50px;"> Yella smelly fella.
             <img src="http://www.littleamerica-twh.net/images/Buster's%20Yellow%20Fellow.jpg" width="300" height="350">
-        
+
 
 </p>
 
@@ -56,7 +69,7 @@
 		</address>
 
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
-    
+
 	<h4>Secrets of the Divine (no cheating)</h4>
 	<table class="table"border="69">
 	  <tr class="success">
@@ -77,7 +90,7 @@
             $poop = array('steps', 'car hood', 'enemys shoes');
         ?>
 
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Things to eat.</th>
@@ -86,21 +99,31 @@
                 </tr>
             </thead>
             <tbody>
-                <?php for ($i = 0; $i < 3; $i++): ?>
+                <?php foreach (range(0, 3) as $i): ?>
                     <tr>
                         <td><?php echo $eat[$i]; ?></td>
-                    </tr>
-                    <tr>
                         <td><?php echo $yell[$i]; ?></td>
-                    </tr>
-                    <tr>
                         <td><?php echo $poop[$i]; ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
 
-        <form class="form-inline">
+<?php
+            $expire=time()+60*60*24*30;
+            setcookie("user", "Alex Porter", $expire);
+?>
+
+<?php
+            // Print a cookie
+            // echo $_COOKIE["user"];
+            //
+            // // A way to view all cookies
+            // print_r($_COOKIE);
+            // ?>
+
+
+        <form class_implementsss="form-inline">
             <fieldset disabled>
                 <div class="form-group">
                     <label for="disabledInput">Disabled input</label>
