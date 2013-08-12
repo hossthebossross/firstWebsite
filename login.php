@@ -4,7 +4,7 @@
     session_start();
 
     if (isset($_SESSION['ross_token'])) {
-        //token is ser so redirect to index.php
+        //token is set so redirect to index.php
         header('Location: index.php');
         die();
     }
@@ -48,4 +48,3 @@
  </form>
     </body>
 </html>
-
