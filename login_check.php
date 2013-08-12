@@ -11,11 +11,13 @@
     if (!array_key_exists($username, $userPasswords)) {
         // redirect to login page with error username not exists
         var_dump('user not exist');
+        die;
     }
 
-    if (!$userPasswords[$username] === $password) {
+    if ($userPasswords[$username] !== $password) {
         // redirect to login page with error password incorrect
         var_dump('password incorrect');
+        die;
     }
 
     // set token
