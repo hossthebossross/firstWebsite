@@ -1,3 +1,16 @@
+<?php
+
+    // start the session
+    session_start();
+
+    if (!$_SESSION['ross_token']) {
+        // no token is set so redirect to login page
+        header('Location: login.php');
+        die();
+    }
+
+?>
+
 <html>
 	<head>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">

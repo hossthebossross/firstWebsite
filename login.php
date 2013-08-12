@@ -1,7 +1,12 @@
 <?php
 
+    // start the session
+    session_start();
+
     if (isset($_SESSION['ross_token'])) {
-        //redirect to index.php
+        //token is set so redirect to index.php
+        header('Location: index.php');
+        die();
     }
 
 ?>

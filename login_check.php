@@ -20,9 +20,14 @@
         die;
     }
 
+    // start the session
+    session_start();
+
     // set token
     $_SESSION['ross_token'] = 'set';
 
     // redirect to homepage
+    header('Location: index.php');
+    die();
 
 ?>
