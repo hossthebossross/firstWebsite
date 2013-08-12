@@ -19,7 +19,7 @@
     </head>
     <body>
         <h1>I'M ROSS AND I'M CRAZY</h1>
-        <form action="logincheck.php" method="post" class="form-horizontal">
+        <form action="login_check.php" method="post" class="form-horizontal">
             <div class="control-group">
                 <label class="control-label" for="input-username">Username</label>
                 <div class="controls">
