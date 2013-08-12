@@ -105,7 +105,7 @@
                         <td><?php echo $yell[$i]; ?></td>
                         <td><?php echo $poop[$i]; ?></td>
                     </tr>
-                <?php endforeach; ?>
+                <?php endfor; ?>
             </tbody>
         </table>
 
