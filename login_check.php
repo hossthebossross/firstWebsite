@@ -10,13 +10,13 @@
 
     if (!array_key_exists($username, $userPasswords)) {
         // redirect to login page with error username not exists
-        var_dump('user not exist');
+        var_dump('User Does Not Exist');
         die;
     }
 
     if ($userPasswords[$username] !==$password) {
         // redirect to login page with error password incorrect
-        var_dump('password incorret');
+        var_dump('password incorrect');
         die;
     }
 
@@ -24,7 +24,7 @@
     session_start();
 
     //set token
-    $_SESSION['ross_toekn'] = 'set';
+    $_SESSION['ross_token'] = 'set';
 
     // redirect to homepage
     header('Location: index.php');
