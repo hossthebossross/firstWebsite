@@ -16,7 +16,9 @@
         $query=" SELECT * FROM TEST.users WHERE username = '$username' AND password = '$password'";
         $result=mysql_query($query);
 
-    if (!array_key_exists($username, $userPasswords)) {
+        ($row = mysql_fetch_assoc($result));
+
+        if (!array_key_exists($username, $result)) {
         // redirect to login page with error username not exists
         var_dump('User Does Not Exist');
         die;
@@ -45,4 +47,8 @@
     );
 ($row = mysql_fetch_assoc($result)) {
             var_dump($row);
+{
+            var_dump($row);
+            die;
+        }
 
