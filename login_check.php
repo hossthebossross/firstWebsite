@@ -8,10 +8,10 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-        $query=" SELECT username, password FROM TEST.users WHERE username = '$username' AND password = '$password'";
-        $result=mysql_query($query);
+    $query = "SELECT username, password FROM TEST.users WHERE username = '$username' AND password = '$password'";
+    $result = mysql_query($query);
 
-        $row = mysql_fetch_assoc($result);
+    $row = mysql_fetch_assoc($result);
 
     if (!$row) {
         // redirect to login page with error username not exists
