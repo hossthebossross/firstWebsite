@@ -17,16 +17,17 @@
         $result=mysql_query($query);
 
         ($row = mysql_fetch_assoc($result));
+            var_dump($row);
+            die;
 
-        $userPasswords = array($row);
 
-    if (!array_key_exists($username, $userPasswords)) {
+    if (!array_key_exists($username, $row)) {
         // redirect to login page with error username not exists
         var_dump('User Does Not Exist');
         die;
     }
 
-    if ($userPasswords[$username] !==$password) {
+    if ($row[$username] !==$password) {
         // redirect to login page with error password incorrect
         var_dump('password incorrect');
         die;
