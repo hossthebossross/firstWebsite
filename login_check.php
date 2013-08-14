@@ -13,15 +13,9 @@
 
         $row = mysql_fetch_assoc($result);
 
-    if (!array_key_exists($username, $row)) {
+    if (!$row) {
         // redirect to login page with error username not exists
         var_dump('User Does Not Exist');
-        die;
-    }
-
-    if ($row[$username] !==$password) {
-        // redirect to login page with error password incorrect
-        var_dump('password incorrect');
         die;
     }
 
