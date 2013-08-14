@@ -13,12 +13,14 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-        $query=" SELECT * FROM TEST.users WHERE username = '$username' AND password = '$password'";
+        $query=" SELECT username, password FROM TEST.users WHERE username = '$username' AND password = '$password'";
         $result=mysql_query($query);
 
         ($row = mysql_fetch_assoc($result));
 
-    if (!array_key_exists($username, $row)) {
+        $userPasswords = array($row);
+
+    if (!array_key_exists($username, $userPasswords)) {
         // redirect to login page with error username not exists
         var_dump('User Does Not Exist');
         die;
