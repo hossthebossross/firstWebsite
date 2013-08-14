@@ -28,8 +28,8 @@
             </div>
             <div class="control-group">
                 <label class="control-label" for="input=password">password</label>
-                <div class="control">
-                     <input name="password" type="text" id="input-password" placeholder="password">
+                <div class="controls">
+                     <input name="password" type="password" id="input-password" placeholder="password">
                 </div>
             </div>
             <div class="control-group">
