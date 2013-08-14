@@ -18,7 +18,7 @@
 
         ($row = mysql_fetch_assoc($result));
 
-        if (!array_key_exists($username, $result)) {
+    if (!array_key_exists($username, $row)) {
         // redirect to login page with error username not exists
         var_dump('User Does Not Exist');
         die;
