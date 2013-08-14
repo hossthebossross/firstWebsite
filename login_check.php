@@ -1,22 +1,21 @@
 <?php
 
-    $userPasswords = array(
-        'andrejbranch' => '123456',
-        'hossthebossross' => '654321',
-    );
+    $link = mysql_connect('localhost', 'root', 'roscar12');
+    if (!$link) {
+        die('Could not connect: ' . mysql_error());
+    }
 
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if (!array_key_exists($username, $userPasswords)) {
+    $query = "SELECT username, password FROM TEST.users WHERE username = '$username' AND password = '$password'";
+    $result = mysql_query($query);
+
+    $row = mysql_fetch_assoc($result);
+
+    if (!$row) {
         // redirect to login page with error username not exists
         var_dump('User Does Not Exist');
-        die;
-    }
-
-    if ($userPasswords[$username] !==$password) {
-        // redirect to login page with error password incorrect
-        var_dump('password incorrect');
         die;
     }
 
@@ -31,4 +30,3 @@
     die();
 
 ?>
-
