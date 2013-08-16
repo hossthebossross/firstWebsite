@@ -21,32 +21,8 @@
     <div id="topbar">
     <ul>
         <li><a href="">Home</a></li>
-        <li><a href="">Browsers</a>
-            <ul>
-                <li><a href="">Chrome</a></li>
-                <li><a href="">Firefox</a></li>
-                <li><a href="">Safari</a></li>
-                <li><a href="">Opera</a></li>
-                <li><a href="">IE</a></li>
-            </ul>
-        </li>
-        <li><a href="">People</a>
-            <ul>
-                <li><a href="">Alice</a></li>
-                <li><a href="">Bob</a></li>
-                <li><a href="">Larry</a></li>
-                <li><a href="">Mary</a></li>
-            </ul>
-        </li>
-        <li><a href="">States</a>
-            <ul>
-                <li><a href="">California</a></li>
-                <li><a href="">New Mexico</a></li>
-                <li><a href="">Utah</a></li>
-                <li><a href="">Florida</a></li>
-            </ul>
-        </li>
-        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Signout</a></li>
     </ul>
     </div>
 

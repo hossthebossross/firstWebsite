@@ -42,7 +42,7 @@ body {
 
 #topbar ul li {
     display: block;
-    float: left;
+    float: right;
     position: relative;
     }
 
