@@ -23,7 +23,7 @@
     <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Login</a></li>
-        <li><a href="">Signout</a><a href= "<?php unset($_SESSION['ross_token']);?>"></a></li>
+        <li><a href="" "logout.php">Signout</a></li>
     </ul>
     </div>
 
