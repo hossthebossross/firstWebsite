@@ -1,11 +1,16 @@
 <?php
 
     session_start();
+    session_unset();
+    session_destroy();
 
-    unset($_SESSION['ross_token']);
-
+  #  if (count($_SESSION) == 0) {
+  #  $_SESSION=array();
+  #  session_destroy();
     //token is unset so redirect to login.php
         header('Location: login.php');
         die();
-
+  #      }
 ?>
+ # unset($_SESSION['ross_token'], $unset );
+

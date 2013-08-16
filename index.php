@@ -22,7 +22,7 @@
     <div id="topbar">
     <ul>
         <li><a href="">Home</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href="" "login.php">Login</a></li>
         <li><a href="" "logout.php">Signout</a></li>
     </ul>
     </div>
@@ -57,7 +57,7 @@
         </p>
 
         <p style="font-family:comics sans;color:teal;font-size:50px;"> Yella smelly fella.
-            <img src="http://www.littleamerica-twh.net/images/Buster's%20Yellow%20Fellow.jpg" width="300" height="350">
+            <img src="http://4.bp.blogspot.com/-JkbEe_5Vcck/TqDPE3eyDBI/AAAAAAAABLk/UFoZrzId5mI/s400/edgar-allen-poe-douche-452x500_large.jpg" width="300" height="350">
 
 
 </p>
