@@ -8,6 +8,7 @@
         header('Location: login.php');
         die();
     }
+
 ?>
 
 <html>
@@ -22,9 +23,10 @@
     <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Login</a></li>
-        <li><a href="">Signout</a></li>
+        <li><a href="">Signout</a><a href= "<?php unset($_SESSION['ross_token']);?>"></a></li>
     </ul>
     </div>
+
 
 </title>
 <html>
