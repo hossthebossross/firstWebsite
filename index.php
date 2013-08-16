@@ -16,7 +16,6 @@
     <title>topbar</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="topbar.css"/>
-    <link href="logout.php" href="login.php"/>
 
 </head>
     <body>
@@ -24,8 +23,8 @@
     <div id="topbar">
     <ul>
         <li><a href="">Home</a></li>
-        <li><a href="" "login.php">Login</a></li>
-        <li><a href="" "logout.php">Signout</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="logout.php">Signout</a></li>
     </ul>
     </div>
 
